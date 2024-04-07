@@ -38,6 +38,10 @@
 		F9FD8DCB2BC3553500CE2EB1 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9FD8DCA2BC3553500CE2EB1 /* FirebaseRemoteConfigSwift */; };
 		F9FD8DCD2BC3553500CE2EB1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F9FD8DCC2BC3553500CE2EB1 /* FirebaseStorage */; };
 		F9FD8DCF2BC3553500CE2EB1 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F9FD8DCE2BC3553500CE2EB1 /* FirebaseStorageCombine-Community */; };
+		F9FD8DD12BC3573000CE2EB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9FD8DD02BC3573000CE2EB1 /* GoogleService-Info.plist */; };
+		F9FD8DD32BC359CE00CE2EB1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8DD22BC359CE00CE2EB1 /* UserModel.swift */; };
+		F9FD8DD72BC35B2200CE2EB1 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8DD62BC35B2200CE2EB1 /* UserViewModel.swift */; };
+		F9FD8DD92BC35D8900CE2EB1 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FD8DD82BC35D8900CE2EB1 /* HomepageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		F9FD8D8D2BC354A100CE2EB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9FD8D8F2BC354A300CE2EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9FD8D922BC354A300CE2EB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9FD8DD02BC3573000CE2EB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F9FD8DD22BC359CE00CE2EB1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F9FD8DD62BC35B2200CE2EB1 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F9FD8DD82BC35D8900CE2EB1 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,10 @@
 			children = (
 				F9FD8D8B2BC354A100CE2EB1 /* Project4App.swift */,
 				F9FD8D8D2BC354A100CE2EB1 /* ContentView.swift */,
+				F9FD8DD62BC35B2200CE2EB1 /* UserViewModel.swift */,
+				F9FD8DD82BC35D8900CE2EB1 /* HomepageView.swift */,
+				F9FD8DD22BC359CE00CE2EB1 /* UserModel.swift */,
+				F9FD8DD02BC3573000CE2EB1 /* GoogleService-Info.plist */,
 				F9FD8D8F2BC354A300CE2EB1 /* Assets.xcassets */,
 				F9FD8D912BC354A300CE2EB1 /* Preview Content */,
 			);
@@ -213,6 +225,7 @@
 			files = (
 				F9FD8D932BC354A300CE2EB1 /* Preview Assets.xcassets in Resources */,
 				F9FD8D902BC354A300CE2EB1 /* Assets.xcassets in Resources */,
+				F9FD8DD12BC3573000CE2EB1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FD8DD92BC35D8900CE2EB1 /* HomepageView.swift in Sources */,
 				F9FD8D8E2BC354A100CE2EB1 /* ContentView.swift in Sources */,
+				F9FD8DD32BC359CE00CE2EB1 /* UserModel.swift in Sources */,
+				F9FD8DD72BC35B2200CE2EB1 /* UserViewModel.swift in Sources */,
 				F9FD8D8C2BC354A100CE2EB1 /* Project4App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

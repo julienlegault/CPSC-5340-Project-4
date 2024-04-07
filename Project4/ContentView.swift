@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var user = UserModel(email: "", password: "")
+    @StateObject var userView = UserViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if userView.signInState {
+            HomepageView()
+        } else {
+            VStack {
+                TextField("Email", text: $user.email)
+                SecureField("Password", text: $user.password)
+                HStack {
+                    Button {
+                        userView.createAccount(user: user)
+                    } label: {
+                        Text("Create Account")
+                    }
+                    Spacer()
+                    Button {
+                        userView.login(user: user)
+                    } label: {
+                        Text("Sign In")
+                    }
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
