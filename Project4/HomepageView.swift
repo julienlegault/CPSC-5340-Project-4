@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomepageView: View {
     
-    @StateObject var userView = UserViewModel()
+    @EnvironmentObject var userView : UserViewModel
     
     var body: some View {
         VStack {

@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @State var user = UserModel(email: "", password: "")
-    @StateObject var userView = UserViewModel()
+    @EnvironmentObject var userView : UserViewModel
     
     var body: some View {
         if userView.signInState {

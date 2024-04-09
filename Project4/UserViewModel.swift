@@ -41,7 +41,6 @@ class UserViewModel: ObservableObject {
         do {
             try Auth.auth().signOut()
             self.signInState = false
-            print(self.signInState)
         } catch let signOutError as NSError {
             print("Error signing out: \(signOutError)")
         }
